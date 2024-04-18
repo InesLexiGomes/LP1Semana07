@@ -5,7 +5,17 @@
 title: Class Diagram
 ---
 classDiagram
-    Program --|> Color
+    Program o-- Character
+
+    Character <|-- Enemy
+    Character <|-- Player
+
+    Weapon <|-- Gun
+    Weapon <|-- Sword
+
+    Character o-- Weapon
+    Enemy o-- Weapon
+    Player o-- Weapon
 
     class Character{
         # weapons: Weapon[]
