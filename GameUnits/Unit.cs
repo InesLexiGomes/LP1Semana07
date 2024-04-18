@@ -1,6 +1,6 @@
 namespace GameUnits
 {
-    public class Unit
+    public abstract class Unit
     {
         private int movement;
         public virtual int Health { get; set; }
