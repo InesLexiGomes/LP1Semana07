@@ -7,6 +7,9 @@ namespace GameUnits
         public override int Health {
             get { return (base.health + XP); }
         }
+        public override float Cost {
+            get { return (this.AttackPower + this.XP); }
+        }
 
         public MilitaryUnit(int mov, int health, int attackPower) : base(mov, health)
         {                                                        // Unit(int, int)
