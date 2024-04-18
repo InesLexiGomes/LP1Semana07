@@ -10,5 +10,17 @@ namespace GameUnits
             this.movement = movement;
             Health = health;
         }
+
+        public void Move()
+        {
+            if (this.movement == 0)
+            {
+                Console.WriteLine("This unit hasn't moved!");
+            }
+            else
+            {
+                Console.WriteLine($"This unit has moved {this.movement}");
+            }
+        }
     }
 }
