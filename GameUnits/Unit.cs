@@ -4,11 +4,13 @@ namespace GameUnits
     {
         private int movement;
         public int Health { get; set; }
+        public float Cost{ get;}
 
-        public Unit(int movement, int health)
+        public Unit(int movement, int health, float cost)
         {
             this.movement = movement;
             Health = health;
+            Cost = cost;
         }
 
         public void Move()
@@ -19,7 +21,7 @@ namespace GameUnits
             }
             else
             {
-                Console.WriteLine($"This unit has moved {this.movement}");
+                Console.WriteLine($"This unit has moved {this.movement}.");
             }
         }
     }
