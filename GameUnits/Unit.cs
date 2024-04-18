@@ -6,11 +6,10 @@ namespace GameUnits
         public virtual int Health { get; set; }
         public abstract float Cost{ get;}
 
-        public Unit(int movement, int health, float cost)
+        public Unit(int movement, int health)
         {
             this.movement = movement;
             Health = health;
-            Cost = cost;
         }
 
         public void Move()
