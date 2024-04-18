@@ -18,5 +18,11 @@ namespace GameUnits
             XP = 0;
             this.baseHP = health;
         }
+
+        public void Attack(Unit u)
+        {
+            this.XP++;
+            u.Health -= this.AttackPower;
+        }
     }
 }
