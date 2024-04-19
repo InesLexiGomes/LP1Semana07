@@ -4,6 +4,7 @@ namespace GameUnits
 {
     public abstract class Unit
     {
+        public abstract string GetName();
         private int movement;
         public virtual int Health { get; set; }
         public abstract float Cost{ get;}

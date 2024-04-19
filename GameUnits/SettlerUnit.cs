@@ -7,6 +7,7 @@ namespace GameUnits
 {
     public class SettlerUnit : Unit
     {
+        public override string GetName(){return "SettlerUnit";}
         public override float Cost {
             get { return 5; }
         }

@@ -7,6 +7,7 @@ namespace GameUnits
 {
     public class XPUnit : Unit
     {
+        public override string GetName(){return "XPUnit";}
         public int XP {get; protected set;}
         public override float Cost{ get;}
 

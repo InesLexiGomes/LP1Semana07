@@ -2,6 +2,7 @@ namespace GameUnits
 {
     public class MilitaryUnit : XPUnit // Heranca!!
     {
+        public override string GetName(){return "MilitaryUnit";}
         private int baseHP;
         public int AttackPower { get; }
         public override int Health {
