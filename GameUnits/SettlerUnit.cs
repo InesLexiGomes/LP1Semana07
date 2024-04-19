@@ -10,6 +10,12 @@ namespace GameUnits
         public override float Cost {
             get { return 5; }
         }
+
+        public override string ToString()
+        {
+            return $"SettlerUnit: HP={Health} Cost={Cost.ToString("0.00")}";
+        }
+
         public SettlerUnit() : base(1, 3){}
     }
 }

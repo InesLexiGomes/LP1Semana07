@@ -24,5 +24,13 @@ namespace GameUnits
             this.XP++;
             u.Health -= this.AttackPower;
         }
+
+        public override string ToString()
+        {
+            int hp = Health;
+            string cost = Cost.ToString("0.00");
+            int ap = AttackPower;
+            return $"MilitartUnit: HP={hp} Cost={cost} AP={ap} XP={XP}";
+        }
     }
 }

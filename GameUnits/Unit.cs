@@ -14,6 +14,11 @@ namespace GameUnits
             Health = health;
         }
 
+        public override string ToString()
+        {
+            return $"Unit: HP={Health} Cost={Cost.ToString("0.00")}";
+        }
+
         public void Move()
         {
             if (this.movement == 0)
