@@ -8,9 +8,11 @@ namespace GameUnits
     public class XPUnit : Unit
     {
         public int XP {get; protected set;}
+        public override float Cost{ get;}
 
-        public SettlerUnit(int move, int health) : base(mov, health)
+        public XPUnit(int mov, int health) : base(mov, health)
         {
+            Cost = 0;
             XP = 0;
         }
     }
